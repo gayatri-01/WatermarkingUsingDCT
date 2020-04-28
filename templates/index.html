@@ -29,7 +29,7 @@
     <!-- For our developer's happinesss and sanity ;) -->
     <nav class="navbar navbar-expand navbar-dark" style="background-color: #000;">
         <!-- Navbar content -->
-        <a class="navbar-brand">Watermark</a>
+        <a class="navbar-brand">Watermarking using DCT</a>
     </nav>
 
 
@@ -38,6 +38,7 @@
         {{ form.as_p }}
         <button type="submit" class="btn btn-success">Upload</button>
     </form>
+    <hr>
     <div style="margin: auto; text-align: center;">
         <button class="btn btn-secondary" onclick="showProcessed()">Process</button>
         <button class="btn btn-secondary" onclick="embedWatermark()">Embed Watermark</button>
@@ -50,7 +51,7 @@
                 <div>
                     <h5>Input Cover Image and Watermark Image</h5>
                     <img src="{{ MEDIA_PREFIX }}input/1.jpg">
-                    <img src="{{ MEDIA_PREFIX }}input/2.jpg">
+                    <img src="{{ MEDIA_PREFIX }}input/2.png">
 
                 </div>
             </td>
@@ -58,7 +59,7 @@
                 <div id="processed" style="display: none;">
                     <h5>Processed Cover Image and Watermark Image</h5>
                     <img src="{{ MEDIA_PREFIX }}processedInputImage/1.jpg">
-                    <img src="{{ MEDIA_PREFIX }}processedInputImage/2.jpg">
+                    <img src="{{ MEDIA_PREFIX }}processedInputImage/2.png">
 
                 </div>
             </td>
@@ -71,7 +72,7 @@
 
                 </div>
             </td>
-      
+
             <td>
                 <div id="recovered" style="display: none;">
                     <h5>Recovered Watermark Image</h5>

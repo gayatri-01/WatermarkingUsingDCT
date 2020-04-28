@@ -94,12 +94,12 @@ def watermarkImage(img):
     global image
     global watermark
     image = os.path.join(path,'input\\1.jpg')
-    watermark = os.path.join(path,'input\\2.jpg')
+    watermark = os.path.join(path,'input\\2.png')
    
     model = 'haar'
     level = 1
     imageArray = convertImage(image, 2048,"1.jpg")
-    watermarkArray = convertImage(watermark, 128,"2.jpg")
+    watermarkArray = convertImage(watermark, 128,"2.png")
     coeffsImage = list(pywt.wavedec2(data=imageArray, wavelet = model, level = level))
     #coeffs_image = process_coefficients(image_array, model, level=level)
     dctArray = applyDCT(coeffsImage[0])
