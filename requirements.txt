@@ -1,0 +1,8 @@
+asgiref==3.2.10
+Django==3.0.8
+numpy==1.19.0
+Pillow==7.2.0
+pytz==2020.1
+PyWavelets==1.1.1
+scipy==1.5.1
+sqlparse==0.3.1
